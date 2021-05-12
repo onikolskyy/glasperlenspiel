@@ -4,6 +4,7 @@
   "description": "a social experiment",
   "main": "index.js",
   "dependencies": {
+    "typescript": "^4.2.4",
     "use-neo4j": "^0.3.4"
   },
   "devDependencies": {},
