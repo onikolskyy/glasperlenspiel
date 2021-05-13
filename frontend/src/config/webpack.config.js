@@ -5,7 +5,6 @@ const path = require('path')
 module.exports = {
     // put sourcemaps inline
     mode : 'development',
-
     devtool: 'eval',
   
     // entry point of our application, within the `src` directory (which we add to resolve.modules below):
@@ -47,6 +46,19 @@ module.exports = {
               loader: 'babel-loader',
               options: {
                 presets: ['@babel/preset-env', '@babel/preset-react']
+              }
+            }, 
+          ], 
+          include: path.resolve('.') 
+        },
+        { 
+          test: /\.(ts|js)x?$/, 
+          exclude: /node_modules/,
+          use: [
+            { 
+              loader: 'babel-loader',
+              options: {
+                presets: ['@babel/preset-env', '@babel/preset-react', '@babel/preset-typescript']
               }
             }, 
           ], 

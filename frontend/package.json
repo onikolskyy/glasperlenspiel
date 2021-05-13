@@ -7,6 +7,7 @@
     "@babel/core": "^7.14.2",
     "@babel/preset-env": "^7.14.2",
     "@babel/preset-react": "^7.13.13",
+    "@babel/preset-typescript": "^7.13.0",
     "@types/react": "^17.0.5",
     "@types/react-dom": "^17.0.4",
     "babel-core": "^6.26.3",
@@ -27,7 +28,8 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack --config src/config/webpack.config.js"
+    "build": "webpack --config src/config/webpack.config.js --mode development --entry App.tsx",
+    "start": "webpack serve --config src/config/webpack.config.js --mode development --entry ./src/App.tsx"
   },
   "author": "",
   "license": "ISC"
