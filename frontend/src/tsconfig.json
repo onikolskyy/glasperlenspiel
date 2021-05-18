@@ -11,7 +11,7 @@
     "jsx": "preserve"
   },
   "include": [
-    "./src/App.tsx"
+    "./components"
   ],
   "exclude": [
     "node_modules"
